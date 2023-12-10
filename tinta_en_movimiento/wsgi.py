@@ -1,5 +1,5 @@
 """
-WSGI config for webpersonal15 project.
+WSGI config for tinta_en_movimiento project.
 
 It exposes the WSGI callable as a module-level variable named ``application``.
 
@@ -11,6 +11,6 @@ import os
 
 from django.core.wsgi import get_wsgi_application
 
-os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'webpersonal15.settings')
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'tinta_en_movimiento.settings')
 
 application = get_wsgi_application()
