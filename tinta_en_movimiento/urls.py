@@ -21,9 +21,13 @@ from django.conf import settings
 
 urlpatterns = [    
     path('', core_views.home, name="home"),
-    path('about-me', core_views.about, name="about"),
-    path('portfolio', portfolio_views.portfolio, name="portfolio"),
-    path('contact', core_views.contact, name="contact"),
+    path('estudio', core_views.estudio, name="estudio"),
+    path('equipo', core_views.equipo, name="equipo"),
+    path('portafolio', portfolio_views.portfolio, name="portafolio"),
+    path('cuidados', core_views.cuidados, name="cuidados"),
+    path('cotizador', core_views.cotizador, name="cotizador"),
+    path('blog', core_views.blog, name="blog"),
+    path('contacto', core_views.contacto, name="contacto"),
     path('admin/', admin.site.urls),
 ]
 
