@@ -23,11 +23,15 @@ urlpatterns = [
     path('', core_views.home, name="home"),
     path('estudio', core_views.estudio, name="estudio"),
     path('equipo', core_views.equipo, name="equipo"),
-    path('portafolio', portfolio_views.portfolio, name="portafolio"),
+    path('portafolio', core_views.portafolio, name="portafolio"),
+    path('portfolio', portfolio_views.portfolio, name="portfolio"),
     path('cuidados', core_views.cuidados, name="cuidados"),
     path('cotizador', core_views.cotizador, name="cotizador"),
     path('blog', core_views.blog, name="blog"),
     path('contacto', core_views.contacto, name="contacto"),
+    path('articuloblog1', core_views.articuloblog1, name="articuloblog1"),
+    path('articuloblog2', core_views.articuloblog2, name="articuloblog2"),
+    path('articuloblog3', core_views.articuloblog3, name="articuloblog3"),
     path('admin/', admin.site.urls),
 ]
 

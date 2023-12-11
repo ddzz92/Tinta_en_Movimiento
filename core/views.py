@@ -26,3 +26,11 @@ def blog(request):
 def contacto(request):
     return render(request, "core/contacto.html")
 
+def articuloblog1(request):
+    return render(request, "core/articuloblog1.html")
+
+def articuloblog2(request):
+    return render(request, "core/articuloblog2.html")
+
+def articuloblog3(request):
+    return render(request, "core/articuloblog3.html")
