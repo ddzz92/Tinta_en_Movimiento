@@ -1,75 +1,27 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tinta en Movimiento - Home</title>
-    <link type="image/png" sizes="32x32" rel="icon" href="Imagenes/favicon.png">
-    <link rel="stylesheet" href="core/static/css.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Acme&family=Nosifer&family=Style+Script&display=swap" rel="stylesheet">
-</head>
-<body>
-    <!--Header - Menu-->
-    <!-------------------------------------------------------------------->
+{% extends "core/_base.html" %}
 
-    <header>
-        <div class="header-content">
-            <div class="logo">
-                <h1>Tinta<b>En</b>Movimiento</h1>    
-            </div>
+{% block title %}Tinta en Movimiento - Home{% endblock %}
 
-            <div class="menu" id="show-menu">
-            
-                <div><nav>
-                    <ul class="menu_display">
-                        <li class="menu-selected"><a href="#" class="text-menu-selected"><i class="fa-solid fa-house"></i>Home</a></li>
-                        <li><a href="core/templates/estudio.html"><i class="fa-solid fa-building"></i>Estudio</a></li>
-                        <li><a href="secciones/equipo.html"><i class="fa-solid fa-handshake"></i>Equipo</a></li>
-                        <li><a href="secciones/portafolio.html"><i class="fa-solid fa-images"></i>Portafolio</a></li>
-                        <li><a href="secciones/cuidados.html"><i class="fa-solid fa-user-nurse"></i>Cuidados</a></li>
-                        <li><a href="secciones/cotizador.html"><i class="fa-solid fa-calculator"></i>Cotizador</a></li>
-                        <li><a href="secciones/blog.html"><i class="fa-solid fa-blog"></i>Blog</a></li>
-                        <li><a href="secciones/contacto.html"><i class="fa-solid fa-address-book"></i>Contacto</a></li>
-                    </ul>
-                </nav></div>
-                
-            </div>
+{% block background %}{% load static %}{% static 'core/img/fondo_portada.jpeg' %}{% endblock %}
 
-            <div id="icon-menu">
-                <i class="fa-solid fa-bars"></i>
-            </div>
-        </div>
-    </header>
 
-    <!--Portada-->
-    <!-------------------------------------------------------------------->
-
-    <div class="container-all" id="move-content">
-
-    <div class="container-cover">
-        <div class="container-info-cover">
-            <h2>Tinta en Movimiento</h2>
-            <br>
-            <P>En nuestro estudio de tatuajes <b>la pasión y el arte</b> se fusionan para  transformar ideas en verdaderas obras maestras sobre la piel. </P>
-        </div>
-    </div>
-
+{% block headers %}
+<h2>TINTA EN MOVIMIENTO</h2>
+<span class="subheading"><h3><b>En nuestro estudio de tatuajes <b>la pasión y el arte</b> se fusionan para  transformar ideas en verdaderas obras maestras sobre la piel.</b></h3></span>
+{% endblock %}
     <!--Section Main-->
     <!-------------------------------------------------------------------->
+{% block content %} 
     
     <div class="main">
         <div>
             <article>
             
-                <h3><a href="secciones/estudio.html">Nuestro estudio</a></h3>
+                <h3><a href="{% url 'estudio' %}">Nuestro estudio</a></h3>
     
                 <p>Somos fieles creyentes de que cada tatuaje tiene una historia que contar, y estamos decididos a ayudarte a contar la tuya, ya sea que estés buscando tu primer tatuaje o que quieras agregar uno más a tu colección, estamos para escucharte, asesorarte y crear una obra que refleje tu personalidad. Acercate y descubrí por qué somos el destino preferido de aquellos que más saben sobre tatuajes, que buscan una atención al cliente inigualable y saben apreciar un ambiente cálido y acogedor. Tu historia es nuestra pasión, y estamos ansiosos por ser parte de ella.</p>
     
-                <img src="Imagenes/Estudio/Estudio_3.jpeg" alt="Imagen del estudio">
+                <img src="{% static 'core/img/Estudio_3.jpeg' %}" alt="Imagen del estudio">
 
             </article>
     
@@ -85,7 +37,7 @@
     <!-------------------------------------------------------------------->
     
     <div class= "section-portafolio">
-        <h3 class="title"><a href="secciones/portafolio.html">Portafolio</a></h3>
+        <h3 class="title"><a href="{% url 'portafolio' %}">Portafolio</a></h3>
 
         <div class="container_slider">
             <div class="container">
@@ -109,55 +61,55 @@
 
                 <div class="cards">
                     <label class="card" for="item-1" id="selector-1">
-                        <img src="Imagenes/Imágenes_Home/chica_india_oso.jpeg" >
+                        <img src="{% static 'core/img/chica_india_oso.jpeg' %}">
                     </label>
                     <label class="card" for="item-2" id="selector-2">
-                        <img src="Imagenes/Imágenes_Home/chica_rosa.jpeg" >
+                        <img src="{% static 'core/img/chica_rosa.jpeg' %}">
                     </label>
                     <label class="card" for="item-3" id="selector-3">
-                        <img src="Imagenes/Imágenes_Home/chica_india_ornamental.jpeg" >
+                        <img src="{% static 'core/img/chica_india_ornamental.jpeg' %}">
                     </label>
                     <label class="card" for="item-4" id="selector-4">
-                        <img src="Imagenes/Imágenes_Home/espalda_baron.jpeg" >
+                        <img src="{% static 'core/img/espalda_baron.jpeg' %}">
                     </label>
                     <label class="card" for="item-5" id="selector-5">
-                        <img src="Imagenes/Imágenes_Home/aguilas_neo_tradicional.jpeg" >
+                        <img src="{% static 'core/img/aguilas_neo_tradicional.jpeg' %}">
                     </label>
                     <label class="card" for="item-6" id="selector-6">
-                        <img src="Imagenes/Imágenes_Home/calavera_blackwork.jpeg" >
+                        <img src="{% static 'core/img/calavera_blackwork.jpeg' %}">
                     </label>
                     <label class="card" for="item-7" id="selector-7">
-                        <img src="Imagenes/Imágenes_Home/gramofono.jpeg" >
+                        <img src="{% static 'core/img/gramofono.jpeg' %}">
                     </label>
                     <label class="card" for="item-8" id="selector-8">
-                        <img src="Imagenes/Imágenes_Home/vaca_neo_tradicional.jpeg" >
+                        <img src="{% static 'core/img/vaca_neo_tradicional.jpeg' %}">
                     </label>
                     <label class="card" for="item-9" id="selector-9">
-                        <img src="Imagenes/Imágenes_Home/tatuaje_serpiente_blancoynegro.jpeg" >
+                        <img src="{% static 'core/img/tatuaje_serpiente_blancoynegro.jpeg' %}">
                     </label>
                     <label class="card" for="item-10" id="selector-10">
-                        <img src="Imagenes/Imágenes_Home/oso_con_flecha.jpeg" >
+                        <img src="{% static 'core/img/oso_con_flecha.jpeg' %}">
                     </label>
                     <label class="card" for="item-11" id="selector-11">
-                        <img src="Imagenes/Imágenes_Home/ave.jpeg" >
+                        <img src="{% static 'core/img/ave.jpeg' %}">
                     </label>
                     <label class="card" for="item-12" id="selector-12">
-                        <img src="Imagenes/Imágenes_Home/leon.jpeg" >
+                        <img src="{% static 'core/img/leon.jpeg' %}">
                     </label>
                     <label class="card" for="item-13" id="selector-13">
-                        <img src="Imagenes/Imágenes_Home/carta.jpeg" >
+                        <img src="{% static 'core/img/carta.jpeg' %}">
                     </label>
                     <label class="card" for="item-14" id="selector-14">
-                        <img src="Imagenes/Imágenes_Home/geometrico.jpeg" >
+                        <img src="{% static 'core/img/geometrico.jpeg' %}">
                     </label>
                     <label class="card" for="item-15" id="selector-15">
-                        <img src="Imagenes/Imágenes_Home/hombre_araña_pecho.jpeg" >
+                        <img src="{% static 'core/img/hombre_araña_pecho.jpeg' %}">
                     </label>
                     <label class="card" for="item-16" id="selector-16">
-                        <img src="Imagenes/Imágenes_Home/brazo_robot.jpeg" >
+                        <img src="{% static 'core/img/brazo_robot.jpeg' %}">
                     </label>
                     <label class="card" for="item-17" id="selector-17">
-                        <img src="Imagenes/Imágenes_Home/cierre_en_hombro.jpeg" >
+                        <img src="{% static 'core/img/cierre_en_hombro.jpeg' %}">
                     </label>
 
                 </div>
@@ -172,7 +124,7 @@
         
         <article>
 
-            <h3><a href="secciones/blog.html">Blog Tattoo</a></h3>
+            <h3><a href="{% url 'blog' %}">Blog Tattoo</a></h3>
             <br>
             <h4>Principales Estilos de Tatuajes</h4>
             
@@ -189,7 +141,7 @@
                 <li>El tatuaje de arte corporal. </li>
             </ol>
 
-            <img src="Imagenes/Blog/tatuaje_blancoynegro.jpeg" alt="Tatuaje en blanco y negro">
+            <img src="{% static 'core/img/tatuaje_blancoynegro.jpeg' %}" alt="Tatuaje en blanco y negro">
             
         </article>
 
@@ -198,15 +150,15 @@
 
         <div class="container-aside">
             <aside>
-                <img src="Imagenes/Blog/tatuadora.jpeg" alt="Tatuadora">
+                <img src="{% static 'core/img/tatuadora.jpeg' %}" alt="Tatuadora">
                 <h4>Como elegir el estilo de tatuaje perfecto</h4>
                 <p>Encontrar el estilo de tatuaje adecuado es una decisión importante, ya que el tatuaje que estás a punto de hacer...</p>
-                <a href="secciones_Blog/articuloblog2.html"><button>Leer más</button></a>
+                <a href="{% url 'articuloblog2' %}"><button>Leer más</button></a>
             </aside>
             <aside>
-                <img src="Imagenes/Blog_3/13-15Oct2023.jpeg" alt="Cartel de evento sobre tatuajes">
+                <img src="{% static 'core/img/13-15Oct2023.jpeg' %}" alt="Cartel de evento sobre tatuajes">
                 <h4>Próximos Eventos en Argentina 2023</h4>
-                <a href="secciones_Blog/articuloblog3.html"><button>Leer más</button></a>
+                <a href="{% url 'articuloblog3' %}"><button>Leer más</button></a>
             </aside>
         </div>    
     </div>
@@ -218,7 +170,7 @@
        
         <div class="container-comentarios">
 
-            <h3><a href="secciones/equipo.html">Opiniones de nuestros clientes</a></h3>
+            <h3><a href="{% url 'equipo' %}">Opiniones de nuestros clientes</a></h3>
             <hr>
 
             <input type="radio" name="slides" id="radio-1" checked>
@@ -233,7 +185,7 @@
                         <q>"La atención al cliente aquí es insuperable. Desde el momento en que entré, me sentí cómodo y bienvenido. El tatuaje que me hicieron es una obra de arte que llevaré con orgullo de por vida."</q>
                         
                         <span class="author">
-                            <img src="Imagenes/Imágenes_Home/user_sin_foto.png">
+                            <img src="{% static 'core/img/user_sin_foto.png' %}">
                             <b>Juan C. - </b>
                         
                             <i class="fa-solid fa-star"></i>
@@ -249,7 +201,7 @@
                     <p>
                         <q>"No podría haber elegido un mejor lugar para mi primer tatuaje. El artista entendió mi visión y la plasmó perfectamente en mi piel. ¡Estoy emocionada con el resultado!"</q>
                         <span class="author">
-                            <img src="Imagenes/Imágenes_Home/user_sin_foto.png">
+                            <img src="{% static 'core/img/user_sin_foto.png' %}">
                             <b> Laura G. - </b>
 
                             <i class="fa-solid fa-star"></i>
@@ -265,7 +217,7 @@
                     <p>
                         <q>"¡Increíble experiencia! El equipo de artistas de este estudio tiene un talento excepcional. Mi tatuaje superó todas mis expectativas. ¡Gracias por hacerlo posible!"</q>
                         <span class="author">
-                            <img src="Imagenes/Imágenes_Home/user_sin_foto.png">
+                            <img src="{% static 'core/img/user_sin_foto.png' %}">
                             <b>Maria S.- </b>
 
                             <i class="fa-solid fa-star"></i>
@@ -281,7 +233,7 @@
                     <p>
                         <q> "Este estudio de tatuajes es simplemente excepcional. La limpieza y profesionalismo son evidentes en cada detalle. Sin duda, mi lugar de referencia para futuros tatuajes."</q>
                         <span class="author">
-                            <img src="Imagenes/Imágenes_Home/user_sin_foto.png">
+                            <img src="{% static 'core/img/user_sin_foto.png' %}">
                             <b>Carlos M. - </b>
 
                             <i class="fa-solid fa-star"></i>
@@ -310,7 +262,7 @@
     <div class="main-Contacto">
         <div>
             <article>
-                <h3><a href="secciones/contacto.html"><b>Contacto</b></a></h3> 
+                <h3><a href="{% url 'contacto' %}"><b>Contacto</b></a></h3> 
                 
                 <ol>
                     <li><b>Dirección</b></li>
@@ -343,29 +295,4 @@
         </div>
     </div>
 
-    <!--Aside-->
-    <!-------------------------------------------------------------------->   
-
-    <div class="container-footer">
-        <footer>
-            <div class="logo-footer">
-                <img src="/Imagenes/logo_estudio.png" alt="Logo del estudio">
-            </div>
-            <div class="redes-footer">
-                <a href="" class="fa-brands fa-pinterest" alt="Contacto: Perfil de Pinterest"></a>
-                <a href="" class="fa-brands fa-google" alt="Contacto: GMail"></a>
-                <a href="" class="fa-brands fa-instagram" alt="Contacto: Perfil de Instagram"></a>
-                <a href="" class="fa-brands fa-whatsapp" alt="Contacto: Contacto de Whatsapp"></a>
-            </div>
-            <hr>
-            <h5>© 2023   TintaEnMovimiento    -    Todos los Derechos Reservados</h5>
-        </footer>
-    </div>
-    </div>
-    <a href="#" class="subir"> <!--Boton de subir pagina-->
-        <i class="fa-solid fa-arrow-up-from-bracket"></i>
-    </a>
-    <script src="/JS/menu.js"></script>
-    <script src="/JS/js_clima.js"></script>
-</body>
-</html>
+{% endblock %}  

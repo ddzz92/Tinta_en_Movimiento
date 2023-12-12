@@ -34,3 +34,4 @@ def articuloblog2(request):
 
 def articuloblog3(request):
     return render(request, "core/articuloblog3.html")
+
