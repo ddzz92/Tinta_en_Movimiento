@@ -1,39 +1,28 @@
 {% extends "core/_base.html" %}
-
 {% block title %}Tinta en Movimiento - Blog{% endblock %}
-
 {% block background %}{% load static %}{% static 'core/img/fondo_portada.jpeg' %}{% endblock %}
+{% block headers %}<h2>BLOG TATTOO</h2>{% endblock %}
+    
+{% block content %} 
 
-
-{% block headers %}
-<h2>BLOG TATTOO</h2>
-{% endblock %}
     <!--Section Main-->
     <!-------------------------------------------------------------------->
-{% block content %} 
+
     <div class="main">
-        
         <article>
         
             <h3>Documentales sobre Tatuajes</h3>
-        
             <p>Los tatuajes son una forma de arte corporal que ha existido desde hace siglos. A lo largo de la historia, los tatuajes han tenido diferentes significados culturales y simbólicos, y han sido utilizados para expresar la identidad personal, la creatividad y el estilo. Actualmente, los tatuajes son más populares que nunca y hay una gran variedad de diseños y estilos disponibles para aquellos que desean expresarse a través de la tinta. Una forma interesante y educativa de conocer más sobre la cultura y el arte de los tatuajes es a través de los documentales.</p>
-            
             <p>En este artículo exploraremos los mejores documentales sobre tatuajes para aquellos que quieran aprender más sobre el arte del tatuaje.Si eres amante del tatuaje y no has visto alguno de estos títulos, tienes algo pendiente. </p>
-            
             <br>
 
             <h3>Videos</h3>
-
             <iframe width="560" height="315" src="https://www.youtube.com/embed/hDQTu9WhObc?si=tYR_-BELJnrK2b1o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
             <h4>El tatuaje y su maestra</h4>
-            
             <iframe width="560" height="315" src="https://www.youtube.com/embed/37oywv7JX0w?si=UQrUg7jA7buQ794k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
             <h4>El Arte del Tatuaje</h4>
-            
             <iframe width="560" height="315" src="https://www.youtube.com/embed/qo-Chj0i2pE?si=IC0eBmXNddvhvmSN" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
             <h4>The Sacred Tattoos Of Thailand</h4>
-            
             <iframe width="560" height="315" src="https://www.youtube.com/embed/WlxRkrGiCBg?si=On-betCviEkuZH_c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
             <h4>El Dúo Japonés : Taki & Horitomo</h4>
             
@@ -44,21 +33,21 @@
         
         <div class="container-aside">
             <aside>
-                <img src="../Imagenes/Blog/tatuaje_blancoynegro.jpeg" alt="Tatuaje en blanco y negro">
+                <img src="{% static 'core/img/tatuaje_blancoynegro.jpeg' %}" alt="Tatuaje en blanco y negro">
                 <h3>Principales estilos de tatuajes</h3>
                 <p>En general, hay un estilo de tatuaje para cada persona. Algunos de los estilos más populares son:</p>
-                <a href="../secciones/blog.html"><button>Leer más</button></a>
+                <a href="{% url 'blog' %}"><button>Leer más</button></a>
             </aside>
             <aside>
-                <img src="../Imagenes/Blog/tatuador.jpeg" alt="Diseño de tatuaje">
+                <img src="{% static 'core/img/tatuador.jpeg' %}" alt="Diseño de tatuaje">
                 <h3>Como elegir el estilo de tatuaje perfecto</h3>
                 <p>Encontrar el estilo de tatuaje adecuado es una decisión importante, ya que el tatuaje que estás a punto de hacerte será una expresión artística permanente en tu cuerpo para siempre.</p>
-                <a href="../secciones_Blog/articuloblog2.html"><button>Leer más</button></a>
+                <a href="{% url 'articuloblog2' %}"><button>Leer más</button></a>
             </aside>
             <aside>
-                <img src="../Imagenes/Blog_3/13-15Oct2023.jpeg" alt="Cartel de evento sobre tatuajes">
+                <img src="{% static 'core/img/13-15Oct2023.jpeg' %}" alt="Cartel de evento sobre tatuajes">
                 <h3>Próximos Eventos en Argentina 2023</h3>
-                <a href="../secciones_Blog/articuloblog3.html"><button>Leer más</button></a>
+                <a href="{% url 'articuloblog3' %}"><button>Leer más</button></a>
             </aside>
         </div>
     </div>

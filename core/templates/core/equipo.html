@@ -1,16 +1,12 @@
 {% extends "core/_base.html" %}
-
 {% block title %}Tinta en Movimiento - Equipo{% endblock %}
-
 {% block background %}{% load static %}{% static 'core/img/fondo_portada.jpeg' %}{% endblock %}
+{% block headers %}<h2>EQUIPO TATTOO</h2>{% endblock %}
 
+{% block content %}
 
-{% block headers %}
-<h2>EQUIPO TATTOO</h2>
-{% endblock %}
     <!--Section Main-->
     <!-------------------------------------------------------------------->
-{% block content %} 
     
     <div class="main">
         <div>
@@ -25,8 +21,8 @@
         </div>
     </div>
 
-    <!-------------------------------------------------------------------->
     <!--Section Equipo-->
+    <!-------------------------------------------------------------------->
 
     <div class= "section-equipo">
         <h3 class="title">Nuestros artistas</a></h3>
@@ -43,27 +39,27 @@
 
                 <div class="cards">
                     <label class="card" for="item-1" id="selector-1">
-                        <img src="../Imagenes/Equipo/luis.jpeg">
+                        <img src="{% static 'core/img/luis.jpeg' %}">
                         <div class="artista"><p>Luis</p></div>
                     </label>
                     <label class="card" for="item-2" id="selector-2">
-                        <img src="../Imagenes/Equipo/carol.jpeg">
+                        <img src="{% static 'core/img/carol.jpeg' %}">
                         <div class="artista"><p>Carol</p></div>
                     </label>
                     <label class="card" for="item-3" id="selector-3">
-                        <img src="../Imagenes/Equipo/charly.jpeg">
+                        <img src="{% static 'core/img/charly.jpeg' %}">
                         <div class="artista"><p>Charly</p></div>
                     </label>
                     <label class="card" for="item-4" id="selector-4">
-                        <img src="../Imagenes/Equipo/nina.jpeg">
+                        <img src="{% static 'core/img/nina.jpeg' %}">
                         <div class="artista"><p>Nina</p></div>
                     </label>
                     <label class="card" for="item-5" id="selector-5">
-                        <img src="../Imagenes/Equipo/enzo.jpeg">
+                        <img src="{% static 'core/img/enzo.jpeg' %}">
                         <div class="artista"><p>Enzo</p></div>
                     </label>
                     <label class="card" for="item-6" id="selector-6">
-                        <img src="../Imagenes/Equipo/val_val.jpeg">
+                        <img src="{% static 'core/img/val_val.jpeg' %}">
                         <div class="artista"><p>Val</p></div>
                     </label>
                 </div>
@@ -71,8 +67,8 @@
         </div>
     </div>
 
-    <!-------------------------------------------------------------------->
     <!--Section comentarios--> <!---redirigir a pág. Equipo---->
+    <!-------------------------------------------------------------------->
 
     <div class="section-opiniones">
        
@@ -92,7 +88,7 @@
                         <q>"La atención al cliente aquí es insuperable. Desde el momento en que entré, me sentí cómodo y bienvenido. El tatuaje que me hicieron es una obra de arte que llevaré con orgullo de por vida."</q>
                         
                         <span class="author">
-                            <img src="../Imagenes/Imágenes_Home/user_sin_foto.png">
+                            <img src="{% static 'core/img/user_sin_foto.png' %}">
                             <b>Juan C. - </b>
                         
                             <i class="fa-solid fa-star"></i>
@@ -109,7 +105,7 @@
                     <p>
                         <q>"No podría haber elegido un mejor lugar para mi primer tatuaje. El artista entendió mi visión y la plasmó perfectamente en mi piel. ¡Estoy emocionada con el resultado!"</q>
                         <span class="author">
-                            <img src="../Imagenes/Imágenes_Home/user_sin_foto.png">
+                            <img src="{% static 'core/img/user_sin_foto.png' %}">
                             <b> Laura G. - </b>
 
                             <i class="fa-solid fa-star"></i>
@@ -126,7 +122,7 @@
                     <p>
                         <q>"¡Increíble experiencia! El equipo de artistas de este estudio tiene un talento excepcional. Mi tatuaje superó todas mis expectativas. ¡Gracias por hacerlo posible!"</q>
                         <span class="author">
-                            <img src="../Imagenes/Imágenes_Home/user_sin_foto.png">
+                            <img src="{% static 'core/img/user_sin_foto.png' %}">
                             <b>Maria S.- </b>
 
                             <i class="fa-solid fa-star"></i>
@@ -143,7 +139,7 @@
                     <p>
                         <q> "Este estudio de tatuajes es simplemente excepcional. La limpieza y profesionalismo son evidentes en cada detalle. Sin duda, mi lugar de referencia para futuros tatuajes."</q>
                         <span class="author">
-                            <img src="../Imagenes/Imágenes_Home/user_sin_foto.png">
+                            <img src="{% static 'core/img/user_sin_foto.png' %}">
                             <b>Carlos M. - </b>
 
                             <i class="fa-solid fa-star"></i>

@@ -1,61 +1,47 @@
 {% extends "core/_base.html" %}
-
 {% block title %}Tinta en Movimiento - Blog{% endblock %}
-
 {% block background %}{% load static %}{% static 'core/img/fondo_portada.jpeg' %}{% endblock %}
+{% block headers %}<h2>BLOG TATTOO</h2>{% endblock %}
 
+{% block content %} 
 
-{% block headers %}
-<h2>BLOG TATTOO</h2>
-{% endblock %}
     <!--Section Main-->
     <!-------------------------------------------------------------------->
-{% block content %} 
-    
+
     <div class="main">
-        
         <article>
 
-            <img src="../Imagenes/Blog/tatuador.jpeg" alt="Diseño de tatuaje">
+            <img src="{% static 'core/img/tatuador.jpeg' %}" alt="Diseño de tatuaje">
         
             <h3>Como elegir el estilo de tatuaje perfecto</h3>
-            
             <p>Encontrar el estilo de tatuaje adecuado es una decisión importante, ya que el tatuaje que estás a punto de hacerte será una expresión artística permanente en tu cuerpo para siempre. No todos los tatuadores realizan todos los estilos del mismo modo, no todas las ideas pueden hacerse en todos los estilos. Estilos de tatuaje como el realismo no pueden alcanzar en muchos aspectos la calidad que ofrece el micro realismo, así como el neotradicional no tiene nada que ver con el Kawaii o que el Handpoke es una de las mejores técnicas para aquellos tatuajes que quieran hacerse en las manos o dedos.</p>
-                        
             <p><b>Algunas ideas que siempre recomendamos:</b></p>
-
+            
             <p><h4>Tu Personalidad</h4></p>
-
             <p>Lo primero piensa en como eres, como te relaciones con el mundo o como ves tu vida dentro de 10 años.</p>
             <p>¿Te consideras audaz o tal vez eres más tímido?, ¿eres muy sociable o más bien te gusta ver el mundo solo?… Estas y más preguntas debes hacerte, ya que la zona del cuerpo donde te acabes tatuando determinará el tamaño o la cantidad de detalles que se puedan hacer, y de ahí, comenzarás a eliminar estilos de tatuaje de tu lista.</p>
-
+            
             <p><h4>Tus gustos</h4></p>
-
             <p>Sólo tú sabes lo que realmente te hace ser feliz, tus hobbies, tus gustos sobre películas, comida, deportes, viajes, familia, el amor, las amistades…</p>
             <p>Esto es muy importante, ya que todo tendrá mucho que ver con el estilo de tatuaje que acabes eligiendo. Por ejemplo, si eres un amante de la música y pensarás en notas musicales  quizás el estilo acuarela fuera lo más acertado pero si piensas en instrumentos quizás el realismo o micro realismo acabaran siendo los estilos más adecuados para ti.</p>
-
+            
             <p><h4>El significado</h4></p>
-
             <p>Escucha muy bien: busca el significado detrás del tatuaje que deseas hacerte.</p>
             <p>No nos referimos a un significado demasiado profundo sino más bien el motivo, el momento, el lugar, con quien o porque te lo haces… el significado debe ser personal pero debe existir, por experiencia sabemos que sin un porque solo será una marca que se volverá en algo que carecerá de sentido para ti, y un tatuaje no es una “camiseta” que puedas cambiar o tirar, es para siempre.</p>
             <p>A lo largo de todos estos años hemos visto de todo pero en lo que más nos esforzamos es en orientar a nuestros clientes a que busquen el significado antes de tatuarse, ayudándolos a encontrar todas las recomendaciones anteriores de este artículo. Un origen de un tatuaje determinará en muchos casos el estilo y  la zona dónde hacerlo.</p>
-
+            
             <p><h4>Busca la inspiración</h4></p>
-
             <p>Hoy en día no es como antes, ahora disponemos de auténticas galerías de inspiración a un solo click. Pierde todo el tiempo que puedas en buscar la inspiración en cualquier plataforma ya sea de dibujos, fotografías o videos.</p>
             <p>La inspiración no es encontrar el tatuaje perfecto si no es el camino para que cuando estés con el tatuador sepa reconocer la fantasía detrás de la idea, para nosotros es la forma de orientarte hacia el estilo de tatuaje que pueda hacerlo posible.</p>
-
+            
             <p><h4>Contacta con el estudio de tatuaje profesional</h4></p>
-
             <p>No te límites a ir a un estudio y ya está, nunca hagas eso. Hoy hay muchos estudios de tatuaje y es justo por eso que cuantas más recomendaciones e ideas puedas ver mejor.</p>
             <p>Lo importante es que al contar tu idea puedan enseñarte trabajos anteriores en los que puedas ver si el estilo que te ofrecen es lo que buscabas realmente, y que su calidad se calidad se ajuste al precio.</p>
-
+           
             <p><h4>Se fiel a ti mismo</h4></p>
-
             <p>Por último y más importante es que entiendas que el tatuaje lo llevarás tú, lo verás tu y desde luego te acompañará toda la vida, asi que nunca te dejes influenciar para hacerte un tatuaje si no estas convencido de hacértelo.</p>
 
             <p><h4>Razones para no tatuarse</h4></p>
-            
             <p>Las razones por las cuales siempre recomendamos a nuestros clientes que no se tatúen en los siguientes momentos:</p>
 
             <ol>
@@ -76,7 +62,6 @@
                 <li>Si tienes problemas dermatológicos.</li>
                 <li>Si estás en periodo de gestación o lactancia o crees que puedas estarlo.</li>
                 <li>Si estás con alguna otra condición que pueda afectar a tu salud o a la evolución y/o cicatrización del tatuaje.</li>
-
             </ol>
             
         </article>
@@ -86,21 +71,21 @@
         
         <div class="container-aside">
             <aside>
-                <img src="../Imagenes/Blog_3/13-15Oct2023.jpeg" alt="Tatuadora">
+                <img src="{% static 'core/img/13-15Oct2023.jpeg' %}" alt="Tatuadora">
                 <h3>Próximos Eventos en Argentina 2023</h3>
-                <a href="../secciones_Blog/articuloblog3.html"><button>Leer más</button></a>
+                <a href="{% url 'articuloblog3' %}"><button>Leer más</button></a>
             </aside>
             <aside>
-                <img src="../Imagenes/Blog/tatuadora.jpeg" alt="Diseño de tatuaje">
+                <img src="{% static 'core/img/tatuadora.jpeg' %}" alt="Diseño de tatuaje">
                 <h3>Documentales sobre Tatuajes</h3>
                 <p>Los tatuajes son una forma de arte corporal que ha existido desde hace siglos. A lo largo de la historia, los tatuajes han tenido diferentes significados culturales y simbólicos, y han sido utilizados para expresar la identidad personal, la creatividad y el estilo.</p>
-                <a href="../secciones_Blog/articuloblog1.html"><button>Leer más</button></a>
+                <a href="{% url 'articuloblog1' %}"><button>Leer más</button></a>
             </aside>
             <aside>
-                <img src="../Imagenes/Blog/tatuaje_blancoynegro.jpeg" alt="Tatuaje en blanco y negro">
+                <img src="{% static 'core/img/tatuaje_blancoynegro.jpeg' %}" alt="Tatuaje en blanco y negro">
                 <h3>Principales estilos de tatuajes</h3>
                 <p>En general, hay un estilo de tatuaje para cada persona. Algunos de los estilos más populares son:</p>
-                <a href="../secciones/blog.html"><button>Leer más</button></a>
+                <a href="{% url 'blog' %}"><button>Leer más</button></a>
             </aside>
         </div> 
     </div>

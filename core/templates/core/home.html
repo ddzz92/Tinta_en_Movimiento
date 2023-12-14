@@ -1,30 +1,23 @@
 {% extends "core/_base.html" %}
-
 {% block title %}Tinta en Movimiento - Home{% endblock %}
-
 {% block background %}{% load static %}{% static 'core/img/fondo_portada.jpeg' %}{% endblock %}
+{% block headers %}<h2>TINTA EN MOVIMIENTO</h2><span class="subheading"><h3><b>En nuestro estudio de tatuajes <b>la pasión y el arte</b> se fusionan para  transformar ideas en verdaderas obras maestras sobre la piel.</b></h3></span>{% endblock %}
 
+{% block content %}
 
-{% block headers %}
-<h2>TINTA EN MOVIMIENTO</h2>
-<span class="subheading"><h3><b>En nuestro estudio de tatuajes <b>la pasión y el arte</b> se fusionan para  transformar ideas en verdaderas obras maestras sobre la piel.</b></h3></span>
-{% endblock %}
     <!--Section Main-->
     <!-------------------------------------------------------------------->
-{% block content %} 
     
     <div class="main">
         <div>
             <article>
             
                 <h3><a href="{% url 'estudio' %}">Nuestro estudio</a></h3>
-    
                 <p>Somos fieles creyentes de que cada tatuaje tiene una historia que contar, y estamos decididos a ayudarte a contar la tuya, ya sea que estés buscando tu primer tatuaje o que quieras agregar uno más a tu colección, estamos para escucharte, asesorarte y crear una obra que refleje tu personalidad. Acercate y descubrí por qué somos el destino preferido de aquellos que más saben sobre tatuajes, que buscan una atención al cliente inigualable y saben apreciar un ambiente cálido y acogedor. Tu historia es nuestra pasión, y estamos ansiosos por ser parte de ella.</p>
     
                 <img src="{% static 'core/img/Estudio_3.jpeg' %}" alt="Imagen del estudio">
 
             </article>
-    
         </div>
     </div>
 
@@ -39,7 +32,8 @@
     <div class= "section-portafolio">
         <h3 class="title"><a href="{% url 'portafolio' %}">Portafolio</a></h3>
 
-        <div class="container_slider">
+        <div class="container_slider" style="background-image: url('{% static 'core/img/fondo_portafolio.jpeg' %}')">
+
             <div class="container">
                 <input type="radio" name="slider" id="item-1" checked>
                 <input type="radio" name="slider" id="item-2">
@@ -60,6 +54,7 @@
                 <input type="radio" name="slider" id="item-17">
 
                 <div class="cards">
+
                     <label class="card" for="item-1" id="selector-1">
                         <img src="{% static 'core/img/chica_india_oso.jpeg' %}">
                     </label>
@@ -127,7 +122,6 @@
             <h3><a href="{% url 'blog' %}">Blog Tattoo</a></h3>
             <br>
             <h4>Principales Estilos de Tatuajes</h4>
-            
             <p>En general, hay un estilo de tatuaje para cada persona. Algunos de los estilos más populares son:</p>
             <br>
             <ol>
@@ -177,7 +171,6 @@
             <input type="radio" name="slides" id="radio-2">
             <input type="radio" name="slides" id="radio-3">
             <input type="radio" name="slides" id="radio-4">
-            
 
             <ul class="slides">
                 <li class="slide">
@@ -244,7 +237,6 @@
                         </span>
                     </p>
                 </li>
-
             </ul>
 
             <div class="navigation">
@@ -294,5 +286,4 @@
             </article>
         </div>
     </div>
-
-{% endblock %}  
+{% endblock %} 

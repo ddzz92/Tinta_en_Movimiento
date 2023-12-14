@@ -10,7 +10,6 @@ def estudio(request):
 def equipo(request):
     return render(request, "core/equipo.html")
 
-
 def portafolio(request):
     return render(request, "core/portafolio.html")
 
@@ -34,4 +33,3 @@ def articuloblog2(request):
 
 def articuloblog3(request):
     return render(request, "core/articuloblog3.html")
-

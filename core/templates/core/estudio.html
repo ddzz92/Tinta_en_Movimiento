@@ -1,28 +1,24 @@
 {% extends "core/_base.html" %}
-
 {% block title %}Tinta en Movimiento - Estudio{% endblock %}
-
 {% block background %}{% load static %}{% static 'core/img/fondo_portada.jpeg' %}{% endblock %}
+{% block headers %}<h2>ESTUDIO TATTOO</h2>{% endblock %}
 
+{% block content %} 
 
-{% block headers %}
-<h2>ESTUDIO TATTOO</h2>
-{% endblock %}
     <!--Section Main-->
     <!-------------------------------------------------------------------->
-{% block content %} 
+
     <div class="main">
         <div>
             <article>
             
                 <h3>Nuestras instalaciones</h3>
-                    
                 <p>Excelencia en tintas y tatuadores</p>
                 <p>En nuestro estudio de tatuajes destacamos por el uso de las tintas más prestigiosas del mercado, cuidadosamente seleccionadas para garantizar la calidad y seguridad de tus tatuajes. Nuestros tatuadores, con años de experiencia en el mundo de la tinta, son verdaderos maestros en su oficio. Cada uno de ellos trae un estilo único y una destreza innegable, asegurando que tu diseño sea una obra de arte personalizada y duradera. Nuestra pasión por la calidad y la perfección nos convierte en el destino perfecto para tu próximo tatuaje.</p>
                 <img src="{% static 'core/img/estudio_2.jpeg' %}" alt="Imagen de nuestro estudio" class="imagenesEstudio">
                 <p>Innovación en cada trazo</p>
                 <p>En nuestro estudio, la innovación está en el corazón de todo lo que hacemos. Hemos adoptado las últimas tecnologías y tendencias de la industria para ofrecerte la experiencia de tatuaje más vanguardista. Nuestras máquinas de tatuaje, diseñadas con precisión y potencia, son la combinación perfecta de arte y ciencia. Esto garantiza líneas nítidas, sombras suaves y colores vibrantes en cada tatuaje.</p>
-                <img src="../Imagenes/Estudio/estudio_1.jpeg" alt="Imagen de nuestro estudio" class="imagenesEstudio">
+                <img src="{% static 'core/img/estudio_1.jpeg' %}" alt="Imagen de nuestro estudio" class="imagenesEstudio">
                 <p>Un espacio para la inspiración y la creatividad</p>
                 <p>Nuestro estudio de tatuajes no es solo un lugar para obtener tatuajes excepcionales, es un santuario de inspiración y creatividad. Nuestras instalaciones están diseñadas para ofrecer un ambiente acogedor y cómodo, donde te vas a sentir como en casa mientras tu imaginación se convierte en realidad. Desde la música ambiental hasta la decoración única, cada detalle se pensó para brindarte una experiencia de tatuaje inigualable. Cada visita a nuestro estudio es una oportunidad para sumergirse en un mundo de arte y autenticidad, donde tus tatuajes cobran vida y se convierten en parte de tu historia.</p>
 
@@ -30,19 +26,18 @@
         </div>
     </div>
 
-    <!-------------------------------------------------------------------->
     <!--Section-->
+    <!-------------------------------------------------------------------->
 
     <div class= "section">
         <div>
             <section>
 
                 <h3>Nuestro trabajo</h3>
-
                 <p>En nuestro estudio de tatuajes la pasión y el arte se fusionan para crear experiencias únicas. Localizados en el centro de la ciudad, somos un equipo de artistas apasionados que se dedican a transformar ideas en obras maestras sobre la piel. Con más de 20 años de experiencia y un serio compromiso con la calidad, nos enorgullece ser uno de los estudios más reconocidos y confiables de toda la región.</p>
-                <img src="../Imagenes/Estudio/estudio_3.jpeg" alt="Imagen de nuestro estudio" class="imagenesEstudio"> <!-- Ver que las imágenes queden bien -->
+                <img src="{% static 'core/img/estudio_3.jpeg' %}" alt="Imagen de nuestro estudio" class="imagenesEstudio"> <!-- Ver que las imágenes queden bien -->
                 <p>En Tinta en Movimiento la excelencia es la norma. Cada uno de nuestros tatuadores y tatuadoras es experto en su campo, con comprobada experiencia y un compromiso absoluto con la seguridad y la higiene. Solo utilizamos las mejores tintas y equipos, y seguimos estrictos estándares de limpieza para garantizar la salud, el bienestar y la comodidad de todos nuestros clientes. A su vez, trabajamos en estrecha colaboración con cada persona que entra por nuestras puertas, logrando así comprender su visión y deseo, para transformarlos en una obra de arte que perdurará toda la vida.</p>
-                <img src="../Imagenes/Estudio/estudio_4.jpeg" alt="Imagen de nuestro estudio" class="imagenesEstudio"> <!-- Ver que las imágenes queden bien -->
+                <img src="{% static 'core/img/estudio_4.jpeg' %}" alt="Imagen de nuestro estudio" class="imagenesEstudio"> <!-- Ver que las imágenes queden bien -->
                 <p>Somos fieles creyentes de que cada tatuaje tiene una historia que contar, y estamos decididos a ayudarte a contar la tuya, ya sea que estés buscando tu primer tatuaje o que quieras agregar uno más a tu colección, estamos para escucharte, asesorarte y crear una obra que refleje tu personalidad. Acercate y descubrí por qué somos el destino preferido de aquellos que más saben sobre tatuajes, que buscan una atención al cliente inigualable y saben apreciar un ambiente cálido y acogedor. Tu historia es nuestra pasión, y estamos ansiosos por ser parte de ella.</p>
                 
             </section>

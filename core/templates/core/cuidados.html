@@ -1,37 +1,30 @@
 {% extends "core/_base.html" %}
-
 {% block title %}Tinta en Movimiento - Cuidados{% endblock %}
-
 {% block background %}{% load static %}{% static 'core/img/fondo_portada.jpeg' %}{% endblock %}
+{% block headers %}<h2>CUIDADOS TATTOO</h2>{% endblock %}
 
+{% block content %} 
 
-{% block headers %}
-<h2>CUIDADOS TATTOO</h2>
-{% endblock %}
     <!--Section Main-->
     <!-------------------------------------------------------------------->
-{% block content %} 
+
     <div class="main">
         <div>
             <article>
 
                 <h3>Cuidados para el tatuaje</h3>
-
                 <p>Los cuidados después de hacerse un tatuaje son esenciales para garantizar una buena cicatrización y
                 mantener la apariencia y la calidad del tatuaje a lo largo del tiempo. A continuación, se detallan
                 algunos de los cuidados necesarios después de hacerse un tatuaje.</p>
-
                 <br>
-                
                 <h3>Limpieza</h3>
-
                 <p>Lava suavemente el tatuaje con agua tibia y jabón antibacteriano suave. No uses una esponja
                 áspera ni frotes con fuerza, simplemente lava suavemente con las manos limpias. Evita el agua
                 muy caliente, ya que puede irritar la piel.
                 Después de lavar, seca el tatuaje con una toalla limpia y sin frotar, solo dando
                 toquecitos suaves para absorber la humedad.</p>
                 
-                <img src="/Imagenes/Cuidados/crema_tatuaje.jpeg" alt="Cuidado del tatuaje">
+                <img src="{% static 'core/img/crema_tatuaje.jpeg' %}" alt="Cuidado del tatuaje">
 
                 <p>Aplica una crema o pomada recomendada por tu tatuador o dermatólogo para mantener el área
                 hidratada. Evita productos con ingredientes irritantes como perfumes o alcohol. Sigue las
@@ -41,26 +34,24 @@
         </div>
     </div>
 
-
-    <!-------------------------------------------------------------------->
     <!--Section-->
+    <!-------------------------------------------------------------------->
 
     <div class="section">
         <div>
             <section>
 
                 <h3>Cuidados posteriores</h3>
-
                 <p>Protege el tatuaje de la luz solar directa, ya que los rayos UV pueden dañar la piel y los colores
                 del tatuaje. Usa ropa que lo cubra o aplica protector solar (después de que el tatuaje haya sanado
                 completamente). Evita rascar o tallar. No toques, rasques o talla el tatuaje, ya que esto puede llevar a
                 infecciones y afectar la calidad del diseño.</p>
 
-                <img src="/Imagenes/Cuidados/cuidados_1.jpeg" alt="Cuidado del tatuaje">
+                <img src="{% static 'core/img/cuidados_1.jpeg' %}" alt="Cuidado del tatuaje">
 
                 <p>No exponer a sustancias irritantes: Evita el contacto con productos químicos, como cloro o productos de limpieza, que podrían irritar la piel tatuada. Evitar el exceso de humedad: No remojes el tatuaje en agua durante períodos prolongados, como baños largos, sauna o vapor, hasta que haya sanado completamente. Mantén una buena higiene general: Lávate las manos antes de tocar el tatuaje y asegúrate de que las sábanas y la ropa que entren en contacto con el tatuaje estén limpias.</p>
 
-                <img src="/Imagenes/Cuidados/cuidados_2.jpeg" alt="Cuidado del tatuaje">
+                <img src="{% static 'core/img/cuidados_2.jpeg' %}" alt="Cuidado del tatuaje">
 
                 <p>El tiempo que toma la cicatrización completa puede variar según el tamaño y la ubicación del tatuaje,
                 pero por lo general, puede llevar de 2 a 4 semanas. Es importante seguir las recomendaciones de te

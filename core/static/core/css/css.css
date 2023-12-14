@@ -993,48 +993,6 @@ input[type=radiO]{
 /*-Galería de Imágenes-*/
 /*--------------------------------------------------------------------*/
 
-.img1 {
-    background-image: url(/Imagenes/Portafolio/1.jpeg);
-}
-.img2 {
-    background-image: url(/Imagenes/Portafolio/2.jpeg);
-}
-.img3 {
-    background-image: url(/Imagenes/Portafolio/3.jpeg);
-}
-.img4 {
-    background-image: url(/Imagenes/Portafolio/4.jpeg);
-}
-.img5 {
-    background-image: url(/Imagenes/Portafolio/5.jpeg);
-}
-.img6 {
-    background-image: url(/Imagenes/Portafolio/6.jpeg);
-}
-.img7 {
-    background-image: url(/Imagenes/Portafolio/7.jpeg);
-}
-.img8 {
-    background-image: url(/Imagenes/Portafolio/8.jpeg);
-}
-.img9 {
-    background-image: url(/Imagenes/Portafolio/9.jpeg);
-}
-.img10 {
-    background-image: url(/Imagenes/Portafolio/10.jpeg);
-}
-.img11 {
-    background-image: url(/Imagenes/Portafolio/11.jpeg);
-}
-.img12 {
-    background-image: url(/Imagenes/Portafolio/12.jpeg);
-}
-.img13 {
-    background-image: url(/Imagenes/Portafolio/13.jpeg);
-}
-.img14 {
-    background-image: url(/Imagenes/Portafolio/14.jpeg);
-}
 .img1, .img2, .img3, .img4, .img5, .img6, .img7, .img8, .img9, .img10, .img11, .img12, .img13, .img14 {
     background-size: cover;
     background-position: center;

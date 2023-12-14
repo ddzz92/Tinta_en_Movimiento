@@ -16,7 +16,6 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from core import views as core_views
-from portfolio import views as portfolio_views
 from django.conf import settings
 
 urlpatterns = [    
@@ -24,7 +23,6 @@ urlpatterns = [
     path('estudio', core_views.estudio, name="estudio"),
     path('equipo', core_views.equipo, name="equipo"),
     path('portafolio', core_views.portafolio, name="portafolio"),
-    path('portfolio', portfolio_views.portfolio, name="portfolio"),
     path('cuidados', core_views.cuidados, name="cuidados"),
     path('cotizador', core_views.cotizador, name="cotizador"),
     path('blog', core_views.blog, name="blog"),
