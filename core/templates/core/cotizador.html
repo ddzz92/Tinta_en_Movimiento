@@ -8,7 +8,7 @@
     <!--Section Main-->
     <!-------------------------------------------------------------------->
 
-    <div class="main">
+    <div class="main" style="background-image: url('{% static 'core/img/fondo_portafolio.jpeg' %}')">
         <div>
             <article>
             
@@ -85,6 +85,38 @@
                 <div id="resultado"></div>
 
             </article>
+        </div>
+    </div>
+
+        <!--Section-->
+    <!-------------------------------------------------------------------->
+
+    <div class= "section">
+        <div>
+            <section>
+
+                <h3>Solicitar Turno</h3>
+                <br>
+
+                
+                <form action="" class ="formulario_turnos" method="post">
+
+                    {% csrf_token %}
+                    
+                    <table>
+                    {{form.as_table}}
+                    </table>
+                    <br>
+                    <br>
+                    <input type="submit" value="Solicitar Turno">
+                    <br>
+                    <br>
+                    <input type="Reset" value="Borrar todo">
+                </form>
+                <br>
+                {{mensaje}}
+
+            </section>
         </div>
     </div>
 {% endblock %}

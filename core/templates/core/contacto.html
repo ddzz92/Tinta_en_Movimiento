@@ -8,7 +8,7 @@
     <!--Section Main-->
     <!-------------------------------------------------------------------->
 
-    <div class="main-Contacto">
+    <div class="main-Contacto" style="background-image: url('{% static 'core/img/fondo_contacto.jpeg' %}')">
         <div>
             <article>
                 <h3><b>Contacto</b></h3> 
@@ -54,14 +54,13 @@
                 <h3>Dejanos tus datos y tu consulta</h3>
                 <br>
 
-                <form>
-                    Nombre y apellido   <input type="text" name="nombre" size="30" maxlength="100">
-                    <br>
-                    <br>
-                    Dirección de correo   <input type="text" name="email" size="41" maxlength="100" value="@">
-                    <br>
-                    <br>
-                    Consulta  <textarea cols="61" rows="7" name="consulta"></textarea>
+                <form action="" class ="formulario_contacto" method="post">
+
+                    {% csrf_token %}
+                    
+                    <table>
+                    {{form.as_table}}
+                    </table>
                     <br>
                     <br>
                     <input type="checkbox" name="recibir_info" checked> Deseo recibir notificación de las
@@ -73,6 +72,8 @@
                     <br>
                     <input type="Reset" value="Borrar todo">
                 </form>
+                <br>
+                {{mensaje}}
 
             </section>
         </div>

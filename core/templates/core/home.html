@@ -29,10 +29,10 @@
     <!--Section portafolio, redirigida a pág. Portafolio-->
     <!-------------------------------------------------------------------->
     
-    <div class= "section-portafolio">
+    <div class= "section-portafolio" style="background-image: url('{% static 'core/img/fondo_portafolio.jpeg' %}')">
         <h3 class="title"><a href="{% url 'portafolio' %}">Portafolio</a></h3>
 
-        <div class="container_slider" style="background-image: url('{% static 'core/img/fondo_portafolio.jpeg' %}')">
+        <div class="container_slider" >
 
             <div class="container">
                 <input type="radio" name="slider" id="item-1" checked>
@@ -251,7 +251,7 @@
     <!--Section contacto, redirigida a pág. Contacto-->
     <!-------------------------------------------------------------------->
         
-    <div class="main-Contacto">
+    <div class="main-Contacto" style="background-image: url('{% static 'core/img/fondo_contacto.jpeg' %}')">
         <div>
             <article>
                 <h3><a href="{% url 'contacto' %}"><b>Contacto</b></a></h3> 
