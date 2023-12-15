@@ -18,28 +18,27 @@ opciones_ancho_tatuaje =[
 ]
 
 opciones_partes =[
-    [0, "brazo"],
-    [1, "pierna"],
-    [2, "pecho"],
-    [3, "espalda"],
-    [4, "abdomen"],
-    [5, "mano"],
-    [6, "otro"]
+    [0, "Brazo"],
+    [1, "Pierna"],
+    [2, "Pecho"],
+    [3, "Espalda"],
+    [4, "Abdomen"],
+    [5, "Mano"],
+    [6, "Otro"]
 ]
 
 opciones_color =[
-    [0, "color"],
-    [1, "negro"],
-    [2, "indeciso"],
+    [0, "1 color"],
+    [1, "2 colores"],
+    [2, "3 colores"],
+    [3, "Más de 3 colores"],
 ]
 
-
-
 opciones_consutas =[
-    [0, "consulta"],
-    [1, "reclamo"],
-    [2, "sugerencia"],
-    [3, "felicitaciones"]
+    [0, "Consulta"],
+    [1, "Reclamo"],
+    [2, "Sugerencia"],
+    [3, "Felicitaciones"]
 ]
 
 class Contacto(models.Model):
@@ -50,7 +49,6 @@ class Contacto(models.Model):
     
     def __str__(self):
         return self.nombre
-    
     
 class Turnos(models.Model):
     nombre = models.CharField(max_length=50)

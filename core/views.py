@@ -46,6 +46,7 @@ def contacto(request):
         else:
             data['form']= formulario
     return render(request, 'core/contacto.html',data)
+
 def articuloblog1(request):
     return render(request, "core/articuloblog1.html")
 
