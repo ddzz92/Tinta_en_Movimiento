@@ -52,6 +52,3 @@ def articuloblog1(request):
 
 def articuloblog2(request):
     return render(request, "core/articuloblog2.html")
-
-def articuloblog3(request):
-    return render(request, "core/articuloblog3.html")

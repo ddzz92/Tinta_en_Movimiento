@@ -16,6 +16,7 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from core import views as core_views
+from blogevento import views as blogevento_views
 from django.conf import settings
 
 urlpatterns = [    
@@ -29,7 +30,7 @@ urlpatterns = [
     path('contacto', core_views.contacto, name="contacto"),
     path('articuloblog1', core_views.articuloblog1, name="articuloblog1"),
     path('articuloblog2', core_views.articuloblog2, name="articuloblog2"),
-    path('articuloblog3', core_views.articuloblog3, name="articuloblog3"),
+    path('articuloblog3', blogevento_views.articuloblog3, name="articuloblog3"),
     path('admin/', admin.site.urls),
 ]
 

@@ -3,5 +3,4 @@ from .models import Contacto, Turnos
 
 # Register your models here.
 admin.site.register(Contacto)
-
 admin.site.register(Turnos)

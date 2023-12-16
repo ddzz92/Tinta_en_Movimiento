@@ -56,8 +56,8 @@ class Turnos(models.Model):
     largo_del_tatuaje = models.IntegerField(choices=opciones_largo_tatuaje)
     ancho_del_tatuaje = models.IntegerField(choices=opciones_ancho_tatuaje)
     parte_del_cuerpo_del_tatuaje = models.IntegerField(choices=opciones_partes)
-    a_color_o_en_negro = models.IntegerField(choices=opciones_color)
-    descripcion = models.TextField()
+    a_color_o_en_negro = models.IntegerField(choices=opciones_color, verbose_name = 'cantidad de colores')
+    descripcion = models.TextField(verbose_name = 'descripción')
     
     def __str__(self):
         return self.nombre
